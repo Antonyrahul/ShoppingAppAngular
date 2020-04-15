@@ -58,6 +58,7 @@ export class EditproductComponent implements OnInit {
 editproduct()
 
   {
+    if(this.productform.valid)
     this.productservice.editProduct(this.productform.value).subscribe((data)=>{
       console.log(data)
      
