@@ -12,20 +12,20 @@ export class ProductService {
   constructor(private http:HttpClient) { }
   postProduct(data):Observable<any>
   {
-    return this.http.post('http://193.161.193.99:51492/addproduct',data)
+    return this.http.post('https://shoppingappnode.herokuapp.com/addproduct',data)
   }
   getProducts(data):Observable<any>
   {
     console.log(data)
-    return this.http.post('http://193.161.193.99:51492/displayproducts',data)
+    return this.http.post('https://shoppingappnode.herokuapp.com/displayproducts',data)
   }
   editProduct(data):Observable<any>{
     console.log(data)
-    return this.http.post('http://localhost:4123/editproduct',data)
+    return this.http.post('https://shoppingappnode.herokuapp.com/editproduct',data)
   }
 
   verifyProduct(data):Observable<any>{
     console.log(data)
-    return this.http.post('http://localhost:4123/verifyproduct',data)
+    return this.http.post('https://shoppingappnode.herokuapp.com/verifyproduct',data)
   }
 }
