@@ -7,6 +7,8 @@ import {ProductdetailsComponent} from './productdetails/productdetails.component
 import { AddproductComponent } from './addproduct/addproduct.component'
 import { CategorydetailsComponent } from './categorydetails/categorydetails.component'
 import { EditproductComponent } from './editproduct/editproduct.component';
+import { LoginComponent } from './login/login.component'
+import {RegisterComponent} from './register/register.component'
 
 
 
@@ -42,6 +44,14 @@ const routes: Routes = [
   {
     path :"edit",
     component:EditproductComponent
+  },
+  {
+    path :"login",
+    component:LoginComponent
+  },
+  {
+    path :"register",
+    component:RegisterComponent
   }
 
 ];

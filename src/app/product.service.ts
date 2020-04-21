@@ -28,4 +28,12 @@ export class ProductService {
     console.log(data)
     return this.http.post('https://shoppingappnode.herokuapp.com/verifyproduct',data)
   }
+  registerUser(data):Observable<any>{
+    console.log(data)
+    return this.http.post("https://shoppingappnode.herokuapp.com/registeruser",data)
+  }
+  loginUser(data):Observable<any>{
+    console.log(data)
+    return this.http.post("https://shoppingappnode.herokuapp.com/loginuser",data)
+  }
 }

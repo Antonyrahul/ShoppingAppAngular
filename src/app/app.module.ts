@@ -12,7 +12,9 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
 import { AddproductComponent } from './addproduct/addproduct.component';
 import {ReactiveFormsModule,FormsModule} from '@angular/forms'
 import {HttpClientModule} from '@angular/common/http';
-import { EditproductComponent } from './editproduct/editproduct.component'
+import { EditproductComponent } from './editproduct/editproduct.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { EditproductComponent } from './editproduct/editproduct.component'
     CategorydetailsComponent,
     ProductdetailsComponent,
     AddproductComponent,
-    EditproductComponent
+    EditproductComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
